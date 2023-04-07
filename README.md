@@ -1,1 +1,5 @@
 ### CIELAB Color Segment Estimation
+
+## Abstract
+
+In the field of image analysis, computer algorithms must recognize and extract essential features or patterns within visual data to accurately represent objects, scenes, or activities. Color information is a critical aspect of object classification, as color differences enable humans to identify the presence of one or more objects. This research introduces a novel method for determining the optimal number of color clusters in CIELAB color space images, using mathematical expressions and K-Means as image segmentation method. Our approach combines perceptual lightness, red, green, blue, and yellow histogram standard deviations, along with the number of local maximum points, by employing a non-linear equation to calculate the ideal number of clusters. Experimental results reveal that the proposed method surpasses widely used techniques such as the Elbow Method and Gap Statistic Method in terms of time. Moreover, our algorithm demonstrates exceptional accuracy in processing visual data within real-world environments, maintaining computational efficiency even as the number of clusters increases.
