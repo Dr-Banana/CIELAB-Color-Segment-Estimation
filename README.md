@@ -70,7 +70,7 @@ The performance of image segmentation using the CCSE algorithm can be validated 
 
 A further validation can be done by Color Reconstruction Error-based Segmentation Evaluation (CRESE) which  evaluates the performance of a color-based image segmentation method, such as the CCSE algorithm, by measuring the color reconstruction error in the segmented image. It calculates the color differences between the true color of each pixel and the average color of the corresponding cluster (label) in the segmented image and sums up the color differences for all pixels. A lower color reconstruction error indicates better performance of the segmentation method in estimating the number of color-based clusters.
 Let O be the original image of size $H x W x 3$ (height, width, and RGB color channels), and let S be the segmented image of the same size with averaged colors per cluster.
-Let $C = \lbracec_1, c_2, ..., c_n \rbrace$ be the set of unique colors in S, where n is the number of unique colors. For each color ci in C, define Mi as the binary mask of size H x W that has 1s where S has color ci and 0s elsewhere.
+Let $C = \lbrace c_1, c_2, ..., c_n \rbrace$ be the set of unique colors in S, where n is the number of unique colors. For each color ci in C, define Mi as the binary mask of size H x W that has 1s where S has color ci and 0s elsewhere.
 The color reconstruction error E is given by:
 
 $$E = \displaystyle\sum_{i=1}^n \displaystyle\sum_{h=1}^H \displaystyle\sum_{w=1}^W M_i (h,w) * \lVert O(h,w) - c_i \rVert$$
