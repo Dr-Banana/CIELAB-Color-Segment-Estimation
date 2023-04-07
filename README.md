@@ -17,7 +17,7 @@ In the field of image analysis, computer algorithms must recognize and extract e
 - PreProcess.py
   > The file used to do image preprocessing such as convert image to gray scale or enhance image contrast.
 
-## Math
+## MATH
 
 *A. Proposed Method*
 
@@ -59,7 +59,7 @@ Adding $min(n_a, n_b)$ to the expression allowing the contribution of the less d
 
 The time complexity of the given function can be analyzed by looking at the time complexity of each of its operations. Given that the histogram size is no more than 256 bins, the time complexity of finding peaks using Find_Local_Maxima can be treated as constant. Therefore, the time complexity of the function can be simplified as follows: assigning image variable has a time complexity of O(1), converting the image from RGB to LAB color space has a time complexity of O(N), where N is the total number of pixels in the image, calculating histograms has a time complexity of O(N), finding peaks has a time complexity of O(1), the while loop in the function has a worst-case time complexity of O(N), and the mathematical operation to determine the number of clusters has a time complexity of O(1). Therefore, the overall time complexity of the function is O(N), where N is the total number of pixels in the image.
 
-** Segmentation
+## RESULTS
 
 *A. Visual Validation*
 
