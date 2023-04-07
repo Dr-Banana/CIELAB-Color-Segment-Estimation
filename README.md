@@ -105,7 +105,7 @@ In contrast, the CCSE method exhibits a more significant decrease in k as the di
 
 Based on this analysis, the CCSE algorithm appears to have the best robustness among the three methods, as it demonstrates the least sensitivity to changes in its input parameters.
 
-**CONCLUSION
+## CONCLUSION
 
 After analyzing results demonstrate above, we can say that the proposed model and CCSE algorithm demonstrates superior performance in various aspects of image segmentation, including runtime efficiency, robustness, visual validation, and quantitative validation.
 
