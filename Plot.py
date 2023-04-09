@@ -9,7 +9,7 @@ class ColorSpace:
                                              np.linspace(0, 1, self.resolution),
                                              np.linspace(0, 1, self.resolution))
 
-    def LAB_Plot(self):
+    def LAB_3D_Plot(self):
         # Flatten and stack the RGB components
         rgb_colors = np.stack((self.R.flatten(), self.G.flatten(), self.B.flatten()), axis=-1)
 
@@ -30,7 +30,7 @@ class ColorSpace:
         ax.set_zlabel('b*', fontsize=18)
         plt.show()
 
-    def RGB_Plot(self):
+    def RGB_3D_Plot(self):
         # Flatten and stack the RGB components
         rgb_colors = np.stack((self.R.flatten(), self.G.flatten(), self.B.flatten()), axis=-1)
 
@@ -46,24 +46,6 @@ class ColorSpace:
         ax.set_ylabel('G', fontsize=18)
         ax.set_zlabel('B', fontsize=18)
         plt.show()
-
-
-def crese(image, averaged_color_image):
-    # Get unique colors from the averaged_color_image
-    unique_colors = np.unique(averaged_color_image.reshape(-1, 3), axis=0)
-
-    max_error = np.sqrt(255 ** 2 * 3)
-    total_pixels = image.shape[0] * image.shape[1]
-    max_total_error = max_error * total_pixels
-
-    reconstruction_error = 0
-    for color in unique_colors:
-        mask = np.all(averaged_color_image == color, axis=-1)
-        color_difference = image[mask] - color
-        reconstruction_error += np.sqrt(np.sum(color_difference ** 2, axis=1)).sum()
-
-    normalized_error = (reconstruction_error / max_total_error) * 100
-    return normalized_error
 
 
 def generate_clustered_image(k, width=128, height=128):
