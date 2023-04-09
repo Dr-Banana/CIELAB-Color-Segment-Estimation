@@ -8,11 +8,14 @@ In the field of image analysis, computer algorithms must recognize and extract e
 
 - main.py
 
+- Input.py
+  > acquire webcamera from computer
+
 - NLT.py
-  > The file that contains CCSE method, elbow method, and gap statistic method.
+  > The file used to calculate the number of cluster using CCSE function and generate the segmented images.
 
 - Plot.py
-  > The file used to plot runtime, robustness, and accuracy experiment data.
+  > The file used to plot the 3D view of RGB color space, LAB color space, runtime data, robustness, and accuracy experiment data.
   
 - PreProcess.py
   > The file used to do image preprocessing such as convert image to gray scale or enhance image contrast.
